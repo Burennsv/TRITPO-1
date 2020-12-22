@@ -1,0 +1,28 @@
+.aboutUs1{
+    margin-top: 80px;
+}
+
+
+@media screen and (max-width: 700px){
+    
+    .second {
+        width: 90% !important;
+        font-size: 15px !important;
+        margin-bottom: 75px !important;
+    }
+
+    .aboutUs {
+        height: auto !important;
+        padding-bottom: 0 !important;
+    }
+}
+
+footer{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+.aboutUs{
+    padding-bottom: 191px !important;
+}

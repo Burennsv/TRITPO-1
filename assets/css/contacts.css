@@ -1,0 +1,39 @@
+.contactsInformation{
+    text-align: center;
+    margin-top: 13%;
+}
+
+.information{
+    display: block;
+}
+footer{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+p{
+    color: white;
+    font-size: 37px;
+    margin-top: 55px;
+    margin-bottom: 13px;
+    font-family: 'Montserrat';
+    font-weight: 500;
+}
+
+.mobileNumber{
+    color: white;
+    font-size: 24px;
+}
+
+.email{
+    color: white;
+    font-size: 22px;
+    margin-top: 10px;
+}
+
+@media screen and (max-width: 800px){
+    .contactsInformation{
+        margin-top: 27%;
+    }
+}      

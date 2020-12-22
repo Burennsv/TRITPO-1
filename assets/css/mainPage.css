@@ -1,0 +1,209 @@
+
+.inspire {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+    height: 200px;
+    padding: 90px 0px 100px 0px;
+    /* background-color: #F7F7F7; */
+}
+
+.styleText{
+    width: 601px;
+    font-size: 61px;
+    margin: auto;
+    color:white;
+}
+
+.designText{
+    width: 507px;
+    font-size: 28px;
+    margin: auto;
+    margin-top: 42px;
+    color: white;
+}
+
+#slider {
+    width: 100%;
+    height: 500px;
+}
+
+#items {
+    display: flex;
+    justify-content: center;
+    overflow-x:hidden;
+}
+
+#items img{
+    height: 500px;
+}
+
+.item img{
+    height: 450px;
+}
+
+.new{
+    width: 100%;
+    margin-top: 76px;
+}
+
+.goods{
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    margin: auto;
+}
+
+.title{
+    text-align: center;
+    font-size: 46px;
+    margin: 105px 0px 80px 0px;
+}
+
+
+
+.Bag{
+    font-size: 25px;
+    margin-bottom: 27px;
+}
+
+
+.color{
+    font-size: 15px;
+    margin-top: 10px;
+}
+
+.courusel{
+    width: 80%;
+    margin: auto;
+    margin-top: 7%;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+.owl-nav img{
+    width: 66%;
+}
+
+.owl-nav .owl-next:hover, .owl-nav .owl-prev:hover{
+    background: none !important;
+    outline: none !important;
+    opacity: 1;
+}
+
+.owl-nav .owl-next, .owl-nav .owl-prev{
+    outline: none !important;
+    width: 5%;
+    height: 6%;
+}
+
+.owl-nav .owl-prev{
+    margin-left: 3% !important;
+}
+.owl-nav .owl-next{
+    margin-right: 3% !important;
+}
+
+
+.owl-nav{
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: -21rem !important;
+    width: 100vw;
+    left: calc(-50vw + 50%);
+
+}
+
+
+
+.block {
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    z-index: -100;
+}
+
+@media screen and (max-width: 1200px){
+    .owl-nav{
+        margin-top: -25rem !important;
+    }
+    .owl-nav img{
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 1100px){
+    .owl-nav{
+        margin-top: -23rem !important;
+    }
+    .owl-nav img{
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 900px){
+    .owl-nav{
+        margin-top: -26rem !important;
+    }
+    .owl-nav img{
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 700px){
+    .owl-nav{
+        margin-top: -22rem !important;
+    }
+    .owl-nav img{
+        width: 80%;
+    }
+
+    .nameOfBag {
+        font-size: 27px;
+        color: white;
+    }
+    .styleText {
+        width: 90%;
+        font-size: 50px;
+    }
+
+    .second {
+        width: 90%;
+        font-size: 15px;
+        margin-bottom: 75px;
+    }
+
+    .aboutUs {
+        height: auto;
+        padding-bottom: 0;
+    }
+}
+@media screen and (max-width: 530px){
+    .styleText {
+        width: 90%;
+        font-size: 45px;
+    }
+    .designText {
+        font-size: 27px;
+        width: 90%;
+}
+}
+
+@media screen and (max-width: 500px){
+    .owl-nav{
+        margin-top: -26rem !important;   
+    }
+    .owl-nav img{
+        width: 120%;
+    }
+    .styleText {
+        font-size: 43px !important;
+    }
+    #slider1{
+        visibility: hidden;
+        display: none;
+    }
+}

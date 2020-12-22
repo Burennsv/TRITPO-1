@@ -1,0 +1,408 @@
+body{
+    margin: 0;
+}
+.fullscreen-bg__video1{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -100;
+    transform: translateX(-50%) translateY(-50%);
+  background-size: cover;
+  transition: 1s opacity;
+}
+.authorisation{
+    display: flex;
+    justify-content: right;
+}
+.logInBar{
+    display: flex;
+    justify-content: space-between;
+    width: 200px;
+    margin-left: auto;
+    margin-right: 20px;
+    margin-top: 14px;
+}
+
+.logInPlusUserIcon{
+display: flex;
+width: 71px;
+justify-content: space-between;
+}
+
+.shoppingBinPlusBinIcon{
+    display: flex;
+    width: 102px;
+    justify-content: space-between;  
+}
+.logIn{
+    text-decoration: none;
+    color: white;
+    font-family: "Montserrat";
+    font-weight: 500;
+    border-radius: 20px;
+    width: 100px;
+    height: 41px;
+}
+
+.logIn:hover{
+    color: rgb(241, 219, 196);
+}
+
+.ShoppingBin{
+    display: flex;
+    text-decoration: none;
+    color: white;
+    font-family: "Montserrat";
+    font-weight: 500;
+    width: 100px;
+    height: 41px;
+}
+
+.ShoppingBin:hover{
+    color: rgb(241, 219, 196);
+}
+
+.fa-user-circle{
+    color: rgb(241, 219, 196);
+}
+
+.fa-shopping-cart{
+    color: rgb(241, 219, 196);
+}
+
+.logo{
+    text-align: center;
+    font-family: "Dansing Script";
+    font-size: 58px;
+    margin-bottom: 30px;
+    color: white;
+    margin-top: 50px;
+}
+
+
+
+hr{
+    height: 2px;
+    width: 730px;
+    margin-bottom: 7px;
+    color: white;
+    background-color: white;
+    border: none;
+}
+.descriptionOfPhotoe{
+    text-align: center;
+    padding: 5px;
+}
+.price{
+    font-size: 19px;
+    margin-top: 10px;
+    color: white;
+}
+
+.nameOfBag{
+    font-size: 31px;
+    color: white;
+}
+
+.aboutUs{
+    height: 340px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    background-color: white;
+    padding-bottom: 191px !important;
+    position: relative;
+    opacity: 0.7;
+}
+
+.aboutUs h2{
+    margin-top: 84px;
+    font-size: 40px;
+    font-weight: 500;
+}
+
+.first{
+    font-size: 18px;
+    font-weight: 400;
+    margin-top: 30px;
+}
+
+.second{
+    margin: auto;
+    width: 552px;
+    font-size: 15px;
+    margin-top: 26px;
+    line-height: 30px;
+}
+
+.photoeWithBag{
+    width: 100%;
+    margin-bottom: -1%;
+}
+
+footer {
+    flex: 0 0 auto;
+    background-color: #F7F7F7;
+    padding: 32px 0;
+    text-align: center;
+
+}
+  
+footer a {
+    color: #70726F;
+    font-size: 20px;
+    padding: 10px;
+    transition: all .5s ease;
+}
+
+footer a:hover {
+    color: black
+}
+
+
+
+@media screen and (max-width: 800px){
+  hr{
+    visibility: hidden;
+    display: none;
+    }
+  .inspire {
+    padding: 10px 0px 100px 0px !important;
+    }
+    .logo{
+        font-size: 70px;
+    }
+    .styleText {
+        width: 90%;
+        font-size: 50px !important;
+    }
+
+    .navBurger {
+        position: fixed;
+        right: 20px;
+        top: 20px;
+        cursor: pointer;
+        background:white;
+        box-sizing: border-box;
+        background-clip: content-box;
+        width: 30px;
+        height: 25px;
+        border-top: 11px solid transparent;
+        border-bottom: 11px solid transparent;
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+        -webkit-transition: all 0.25s ease-in-out;
+        transition: all 0.25s ease-in-out;
+        z-index: 100;
+    }
+    .navBurger:before,
+    .navBurger:after {
+            content: "";
+            position: absolute;
+            background: white;
+            height: 2px;
+            width: 100%;
+            right: 0;
+            will-change: rotate;
+            -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+            -webkit-transition: all 0.5s ease;
+            transition: all 0.5s ease;
+            
+        }
+        .navBurger:before {
+            top: -10px;
+            width: 90%;
+        }
+        .navBurger:after {
+            bottom: -10px;
+            width: 80%;
+        }
+        .navBurger.active {
+            background: transparent;
+            background-clip: content-box;
+        }
+        .navBurger.active:before {
+            -webkit-transform: rotate(135deg);
+            transform: rotate(135deg);
+            top: 0;
+            background: #eee;
+            width: 110%;
+        }
+        .navBurger.active:after {
+            position: fixed;
+            bottom: 0;
+            -webkit-transform: rotate(-135deg);
+            transform: rotate(-135deg);
+            background: #eee;
+            width: 110%;
+        }
+
+        
+    .overlay {
+        position: absolute;
+        background-color:white;
+        top: 0;
+        right: 0;
+        width: 100%;
+        height: 100%;
+        opacity: 0;
+        transform-origin: right top;
+        transform: scale(0);
+        visibility: hidden;
+        transition: all 0.4s ease-in-out;
+        overflow: hidden;
+    }
+    .overlay.open {
+            opacity: 1;
+            visibility: visible;
+            transform: scale(1);
+            z-index: 90;
+            
+    }
+    .overlay.open li {
+                display: block;
+                animation: fadeInRight 0.4s cubic-bezier(0.42, 0.83, 0.7, 1.5)
+                    forwards;
+                animation-delay: 0.4s;
+                transform: rotate(-7deg);
+                transform-origin: right bottom;
+    }
+    .overlay.open li:nth-of-type(2) {
+        animation-delay: 0.5s;
+    }
+    .overlay.open li:nth-of-type(3) {
+    animation-delay: 0.6s;
+    }
+    .overlay.open li:nth-of-type(4) {
+        animation-delay: 0.7s;
+    }
+    .overlay.open li:nth-of-type(5) {
+        animation-delay: 0.8s;
+    }
+    
+
+    .navbar {
+        /* position: absolute; */
+        text-align: center;
+        /* right: 10vw;
+        bottom: 10vw; */
+    }
+    .navbar ul {
+            list-style: none;
+            padding: 0;
+            margin: 0 auto;
+            display: block;
+            position: relative;
+            height: 100%;
+            margin-top: 20px;
+    }
+    .navbar li {
+                display: flex;
+                position: relative;
+                opacity: 0;
+                width: 100%;
+                justify-content: center;
+    }
+    .navbar li a {
+        display: inline-block;
+        text-decoration: none;
+        padding: 10px 40px 10px 40px;
+        transition: 0.2s;
+        font-family: "Montserrat";
+        font-weight: 500;
+        color: black;
+        border-radius: 20px;
+        width: 100px;
+        height: 41px;
+        font-size: 22px;
+
+        
+    }
+    .navbar li a:hover,
+    .navbar li a:active,
+    .navbar li a:focus {
+        transform: translateX(-2px);
+        padding-left: 80px;
+        border: 1px solid rgba(255, 255, 255, 1);
+        background-color:green;
+    }
+
+
+    .locked {
+        overflow: hidden;
+    }
+
+    @keyframes fadeInRight {
+        0% {
+            opacity: 0;
+            left: 50px;
+        }
+        100% {
+            opacity: 1;
+            left: 0;
+            transform: rotate(0deg);
+        }
+    }
+
+    /* ---------------- Display -------------------- */
+    html {
+        margin: 0;
+        background: #eee;
+        color: #222;
+        font-weight: 300;
+        font-family: "Raleway";
+    }
+
+    .selected{
+        background-color: green;
+    }
+
+
+}
+
+
+
+@media screen and (min-width: 800px){
+    .navbar {
+        width: 612px;
+        margin: auto;
+        margin-bottom: 20px;
+    }
+    
+    .navbar ul{
+        display: flex;
+        justify-content: space-between;
+        padding-inline-start: 0px;
+    }
+    
+    .navbar ul li{
+        list-style-type: none;
+    }
+    
+    .navbar ul li a{
+        display: flex;
+        text-decoration: none;
+        font-family: "Montserrat";
+        font-weight: 500;
+        color:white;
+        border-radius: 20px;
+        width: 100px;
+        height: 41px;
+        align-items: center;
+        justify-content: center;
+    
+    }
+    
+    .navbar ul li a:hover{
+        background-color: green;
+    }
+    
+    .selected{
+        background-color: green;
+    }
+}
